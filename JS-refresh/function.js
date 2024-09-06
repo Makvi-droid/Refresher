@@ -33,5 +33,16 @@ function lastLetter(str){
 
 console.log(lastLetter("Kimiya"));
 
+function isValidEmail(email){
+    if(email.includes('@')){
+        return console.log("Email is valid");
+    }
+    else{
+        return console.log("Email is invalid");
+    }
+}
+
+console.log(isValidEmail("email.fake.com"));
+
 
 
