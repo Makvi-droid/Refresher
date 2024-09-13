@@ -8,16 +8,23 @@ btn.addEventListener('click', function(){
 
 function paragraphContent(){
     const itemContainer = document.createElement('div');
+    
     const newItem = document.createElement('p');
+    newItem.textContent = shopInput.value;
 
-    content.textContent = shopInput.value;
     const dltBtn = document.createElement('button');
-    content.appendChild(dltBtn);
-    itemContainer.appendChild(content);
     dltBtn.textContent = 'Delete';
-    dltBtn.addEventListener('click', function(){
-        content.remove();
+
+    itemContainer.appendChild(newItem);
+    itemContainer.appendChild(dltBtn);
+
+    content.appendChild(itemContainer);
+
+    dltBtn.addEventListener('click', function() {
+        content.removeChild(itemContainer);
     });
+
+    shopInput.value = '';
 }
 
 
