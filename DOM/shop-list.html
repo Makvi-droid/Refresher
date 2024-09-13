@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping list example</title>
     <style>
-      li {
-        margin-bottom: 10px;
+      #item{
+        height: 20px;
       }
-
-      li button {
-        font-size: 12px;
-        margin-left: 20px;
-        color: #666;
+      button{
+        padding: 10px;
+      }
+      label{
+        font-size: 1.8rem;
+      }
+      p{
+        font-size: 1.3rem;
       }
     </style>
   </head>
@@ -20,15 +23,15 @@
 
     <h1>My shopping list</h1>
 
-    <div>
+    <div class="shopList">
       <label for="item">Enter a new item:</label>
       <input type="text" name="item" id="item">
-      <button>Add item</button>
+      <button class="btn">Add item</button>
+
+      <p class="input-content"></p>
     </div>
 
-    <ul>
-
-    </ul>
+    <script src="shop-list.js"></script>
 
   </body>
 </html>
