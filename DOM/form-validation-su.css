@@ -1,0 +1,13 @@
+#error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px; 
+    text-align: left; 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
