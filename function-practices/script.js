@@ -117,6 +117,34 @@ rvrsBtn.addEventListener('click', function(){
 });
 
 
+//palindrome checker
+let palBtn = document.querySelector('.palBtn');
+let palSpan = document.querySelector('.palSpan');
+
+function palindromeChecker(palindrom){
+
+    let normalString = palindrom.toLowerCase();
+
+    let palindromeString = palindrom.split('').reverse().join('');
+
+    if(palindromeString === normalString){
+        return 'Word is a palindrome';
+    }
+    else{
+        return 'Word is not a palindrome';
+    }
+
+}
+
+console.log(palindromeChecker('baby'))
+
+palBtn.addEventListener('click', function(){
+
+    let palWord = palindromeChecker('baby');
+    palSpan.textContent = palWord;
+
+});
+
 
 
 
