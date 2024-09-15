@@ -12,12 +12,23 @@ greetBtn.addEventListener('click', function(){
     answer.textContent = name;
 });
 
-let solveBtn = document.querySelector('.solve');
+
+//add function act
+let solveBtn = document.querySelector('.num');
 let number = document.querySelector('.number');
 
 function addNumbers(x, y){
     return x + y;
 }
+console.log(addNumbers(5, 5));
+
+solveBtn.addEventListener('click', function(){
+    const nums = addNumbers(5, 10);
+    number.textContent = nums;
+});
+
+
+
 
 
 
