@@ -53,6 +53,69 @@ evenBtn.addEventListener('click', function(){
 });
 
 //factorial
+const factorBtn = document.querySelector('.factor');
+const factorSpan = document.querySelector('.factorial');
+
+function factorial(n){
+
+    let result = 1;
+    for(i = 1; i <= n; i++){
+
+        result *= i;
+
+    }
+    return result
+
+}
+console.log(factorial(5));
+
+
+factorBtn.addEventListener('click', function(){
+    const span = factorial(5);
+    factorSpan.textContent = span; 
+});
+
+//count vowels
+const countVowelsBtn = document.querySelector('.countVowels');
+const vowelSpan = document.querySelector('.countSpan');
+
+function countVowels(str){
+    let vowelCount = 0;
+    let vowels = 'aeiouAEIOU';
+
+    for(let char of str){
+        if(vowels.includes(char)){
+            vowelCount++;
+        }
+    }
+    return vowelCount;
+    
+}
+console.log(`There is/are ${countVowels('Monkey')} vowels`);
+
+countVowelsBtn.addEventListener('click', function(){
+    let vow = countVowels('Monkey');
+    vowelSpan.textContent = `There is/are ${vow} vowels`;
+});
+
+//reverse String
+let rvrsBtn = document.querySelector('.rvrsBtn');
+let rvrsSpan = document.querySelector('.rvrsSpan');
+
+function reverseString(string){
+    let splitString = string.split('');
+    let reverseString = splitString.reverse();
+    let joinString = reverseString.join('');
+    return joinString;
+}
+
+console.log(reverseString('Hello'));
+
+rvrsBtn.addEventListener('click', function(){
+    const stri = reverseString('Hello');
+    rvrsSpan.textContent = stri;
+});
+
 
 
 
