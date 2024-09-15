@@ -27,6 +27,32 @@ solveBtn.addEventListener('click', function(){
     number.textContent = nums;
 });
 
+//Even or odd
+let evenBtn = document.querySelector('.even');
+let evenSpan = document.querySelector('.evenOrOdd');
+
+function isEven(num){
+    let even = true
+    let odd = false;
+
+    if(num % 2 == 0){
+        return even;
+    }
+    else{
+        return odd;
+    }
+}
+
+console.log(isEven(4));
+
+evenBtn.addEventListener('click', function(){
+
+    const ans = isEven(4);
+    evenSpan.textContent = ans ? "Even" : "Odd";
+
+});
+
+//factorial
 
 
 
