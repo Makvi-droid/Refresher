@@ -1,6 +1,16 @@
 let greetBtn = document.querySelector('.greet');
 let answer = document.querySelector('.answer');
 
+function hello(){
+    console.log('sheesh');
+    console.log('sheesh');
+    console.log('sheesh');
+    console.log('sheesh');
+    console.log('sheesh');
+}
+
+hello();
+
 //greet activity
 function greetUser(name){
     return "Hello I am " + name;
@@ -144,6 +154,27 @@ palBtn.addEventListener('click', function(){
     palSpan.textContent = palWord;
 
 });
+
+//
+let btn = document.getElementById('btn');
+let msg = document.getElementById('msg');
+
+btn.addEventListener('click', function(){
+    msg.textContent = 'ivnsIOdy';
+});
+
+//
+let meow = document.getElementById('meow');
+let aa = document.getElementById('aa');
+function vuggu(name){
+    return name;
+}
+
+meow.addEventListener('click', function(){
+    aa.textContent = 'Hi my name is ' + vuggu('kimi');
+})
+
+
 
 
 
