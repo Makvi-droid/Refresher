@@ -32,7 +32,7 @@ let evenBtn = document.querySelector('.even');
 let evenSpan = document.querySelector('.evenOrOdd');
 
 function isEven(num){
-    let even = true
+    let even = true;
     let odd = false;
 
     if(num % 2 == 0){
