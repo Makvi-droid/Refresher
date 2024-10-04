@@ -2,7 +2,7 @@ const shopInput = document.getElementById('item');
 const btn = document.querySelector('.btn');
 const content = document.querySelector('.input-content');
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function(e){
     paragraphContent();
 });
 
